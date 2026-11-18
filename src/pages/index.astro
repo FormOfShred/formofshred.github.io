@@ -1,10 +1,14 @@
 ---
+import HomeHeader from '../components/pages/home/HomeHeader.astro';
 import Card from '../components/shared/card/Card.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
 	<Card>
-		<span>Robyn Hamelryck</span>
+		<div class="flex-col gap-sm">
+			<HomeHeader />
+			<span>more...</span>
+		</div>
 	</Card>
 </Layout>

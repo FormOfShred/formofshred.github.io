@@ -18,3 +18,11 @@ main {
   grid-template-columns: 1fr 4fr;
   gap: var(--spacing-2);
 }
+
+@media (width <= 700px) {
+  /* … */
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}

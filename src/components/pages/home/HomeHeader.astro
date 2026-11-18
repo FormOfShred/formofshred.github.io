@@ -1,0 +1,63 @@
+---
+import { nan } from "astro:schema";
+import Ping from "../../shared/ping/Ping.astro";
+
+const title = "robynhamelryck@portfolio"
+
+const details = [
+  {
+    title: "Name",
+    subtitle: "Robyn Hamelryck"
+  },
+  {
+    title: "Languages",
+    subtitle: "Dutch, English"
+  },
+  {
+    title: "Tech Stack",
+    subtitle: "React, TypeScript, Redux"
+  },
+  {
+    title: "Likes",
+    subtitle: "Gaming, Football, Running, Coding, Reading"
+  },
+  {
+    title: "Github",
+    subtitle: "FormOfShred"
+  },
+  {
+    title: "Availability",
+    subtitle: "Available"
+  },
+]
+
+const midpoint = Math.ceil(details.length / 2);
+const firstHalf = details.slice(0, midpoint);
+const secondHalf = details.slice(midpoint);
+---
+<div class="flex-col">
+  <div class="flex justify-between items-center">
+    <span class="text-foreground-secondary">
+      {title}
+    </span>
+    <div class="flex items-center gap-sm">
+      <Ping />
+      <span class="font-xs text-foreground-secondary">Working on portfolio</span>
+    </div>
+  </div>
+  <span>
+    ------------------------
+  </span>
+  <div class="grid grid-cols-2 gap-sm sm:flex-col sm:gap-none">
+    {[firstHalf, secondHalf].map((group) => (
+      <div>
+        {group.map(({ title, subtitle }) => (
+          <div>
+            <span class="text-foreground-secondary">{title}</span>
+            <span>: {subtitle}</span>
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+</div>
