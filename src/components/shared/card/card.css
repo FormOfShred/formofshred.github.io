@@ -3,6 +3,14 @@
   padding: var(--spacing-2);
 }
 
+.card--secondary {
+  border: .15rem ridge var(--border);
+
+  outline: .1rem solid var(--outline);
+
+  background-color: var(--background-secondary);
+}
+
 .card__title {
   color: var(--foreground-secondary);
   font-size: var(--font-lg);

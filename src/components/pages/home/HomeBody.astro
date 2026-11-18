@@ -1,0 +1,123 @@
+---
+import Folder from "../../../assets/icons/Folder.astro";
+import Card from "../../shared/card/Card.astro";
+import Link from "../../shared/link/Link.astro";
+
+const description = "Experienced in front-end development, but interested in Full-Stack and Back-end work as well. I’m always open to new learning experiences and looking forward to getting the most out of what software development has to offer."
+
+const inProgress = [
+  {
+    title: "Building",
+    subtitle: "Portfolio"
+  },
+  {
+    title: "Learning",
+    subtitle: "Astro"
+  },
+  {
+    title: "Gaming",
+    subtitle: "Queen's domain"
+  }
+]
+
+const skills = [
+  "React",
+  "TypeScript",
+  "Redux",
+  "Git",
+  "Astro",
+  "JavaScript",
+  "HTML/CSS",
+  "Problem Solving",
+  "Learning",
+  "Teamwork",
+  "Independence"
+]
+
+const currentlyWorking = {
+  title: "Portfolio",
+  description: "Currently working on improving my portfolio, updating it and experiment with the look of it.",
+  techStack: [
+    "Astro",
+    "HTML",
+    "CSS"
+  ]
+}
+---
+<div class="flex-col gap-sm">
+  <Card 
+    title={
+      <div class="flex items-center gap-sm">
+        <Folder width={17} height={17} />
+        <span>Overview</span>
+      </div>
+    }
+    variant="secondary"
+  >
+    <div class="pt-sm">
+      <span>
+        {description}
+      </span>  
+
+      <div class="grid grid-cols-4 pt-lg sm:flex-col gap-xs">
+      {
+        inProgress.map(({title, subtitle}) => {
+          return (
+            <div class="flex flex-col">
+              <span class="text-foreground-secondary font-sm">{title}</span>
+              <span class="font-sm">{subtitle}</span>
+            </div>
+          )
+        })
+      }
+      </div>
+
+      <div class="pt-lg">
+        <span class="text-foreground-secondary">Skills</span>
+        <div class="grid grid-cols-4 pt-xs gap-sm">
+          {
+            skills.map((skill) => {
+              return (
+                <span>{skill}</span>
+              )
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </Card>
+  <Card 
+    title={
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-sm">
+          <Folder width={17} height={17} />
+          <span>Working on:</span>
+          <span class="text-foreground">{currentlyWorking.title}</span>
+        </div>
+        <Link href="/history">
+          <span class="font-sm">See more</span>
+        </Link>
+      </div>
+    }
+    variant="secondary"
+  >
+    <div class="pt-sm">
+      <span>
+        {currentlyWorking.description}
+      </span>  
+
+      <div class="pt-lg">
+        <span class="text-foreground-secondary">Tech Stack</span>
+        <div class="grid grid-cols-4 pt-xs gap-sm">
+          {
+            currentlyWorking.techStack.map((skill) => {
+              return (
+                <span>{skill}</span>
+              )
+            })
+          }
+        </div>
+      </div>
+    </div>
+  </Card>
+</div>

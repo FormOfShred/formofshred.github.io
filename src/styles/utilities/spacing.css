@@ -11,6 +11,10 @@
   gap: var(--spacing-2);
 }
 
+.gap-lg {
+  gap: var(--spacing-3);
+}
+
 /* Padding */
 .p-none {
   padding: var(--spacing-0);
@@ -22,6 +26,10 @@
 
 .p-sm {
   padding: var(--spacing-2);
+}
+
+.p-lg {
+  padding: var(--spacing-3);
 }
 
 /* Padding Left*/
@@ -37,6 +45,10 @@
   padding-left: var(--spacing-2);
 }
 
+.pl-lg {
+  padding-left: var(--spacing-3);
+}
+
 /* Padding Top */
 .pt-none {
   padding-top: var(--spacing-0);
@@ -48,4 +60,8 @@
 
 .pt-sm {
   padding-top: var(--spacing-2);
+}
+
+.pt-lg {
+  padding-top: var(--spacing-3);
 }

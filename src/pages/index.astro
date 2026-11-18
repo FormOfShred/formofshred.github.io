@@ -1,4 +1,5 @@
 ---
+import HomeBody from '../components/pages/home/HomeBody.astro';
 import HomeHeader from '../components/pages/home/HomeHeader.astro';
 import Card from '../components/shared/card/Card.astro';
 import Layout from '../layouts/Layout.astro';
@@ -6,9 +7,9 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
 	<Card>
-		<div class="flex-col gap-sm">
+		<div class="flex-col gap-lg">
 			<HomeHeader />
-			<span>more...</span>
+			<HomeBody />
 		</div>
 	</Card>
 </Layout>

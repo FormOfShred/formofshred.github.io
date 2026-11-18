@@ -1,9 +1,9 @@
 ---
 import "./card.css";
 
-const { title } = Astro.props;
+const { title, variant = "primary" } = Astro.props;
 ---
-<div class="card">
+<div class={`card card--${variant}`}>
   <div class="card__title">
     {title}
   </div>
