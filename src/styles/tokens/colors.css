@@ -1,0 +1,11 @@
+:root {
+  --background: oklch(0.2643 0.0313 252.77);
+  --foreground: oklch(0.9563 0.0143 84.58);
+
+  --background-secondary: oklch(0.3595 0.11123 14.606);
+  --foreground-secondary: oklch(0.78817 0.04988 84.501);
+
+  --border: oklch(0.38207 0.04074 166.359);
+
+  --outline: oklch(0 0 0);
+}

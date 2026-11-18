@@ -1,0 +1,8 @@
+@import "./tokens/index.css";
+@import "./utilities/index.css";
+
+:root {
+  background-color: var(--background);
+  color: var(--foreground);
+  background-image: repeating-linear-gradient(90deg, oklch(1 0 0 / 2.5%) 0 1px, transparent 1px 3px);
+}

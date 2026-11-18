@@ -1,0 +1,51 @@
+/* Text */
+.text-background {
+  color: var(--background);
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
+
+.text-background-secondary {
+  color: var(--background-secondary);
+}
+
+.text-foreground-secondary {
+  color: var(--foreground-secondary);
+}
+
+.text-border {
+  color: var(--border);
+}
+
+.text-outline {
+  color: var(--outline);
+}
+
+/* Background */
+
+.bg-background {
+  background-color: var(--background);
+}
+
+.bg-foreground {
+  background-color: var(--foreground);
+}
+
+.bg-background-secondary {
+  background-color: var(--background-secondary);
+}
+
+.bg-foreground-secondary {
+  background-color: var(--foreground-secondary);
+}
+
+.bg-border {
+  background-color: var(--border);
+}
+
+.bg-outline {
+  background-color: var(--outline);
+}
+
