@@ -1,0 +1,28 @@
+.link {
+  display: flex;
+  color: var(--foreground);
+
+  text-decoration: none;
+
+  border: .1rem dotted transparent;
+
+  padding: var(--spacing-1);
+
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  transition-duration: 300ms;
+
+  &:hover {
+    color: var(--foreground-secondary);
+
+    background-color: var(--background-secondary);
+  }
+}
+
+.link--active {
+  color: var(--foreground-secondary);
+
+  background-color: var(--background-secondary);
+
+  border-color: var(--border);
+}

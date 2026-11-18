@@ -1,0 +1,48 @@
+---
+import Folder from "../../assets/icons/Folder.astro";
+import Plus from "../../assets/icons/Plus.astro";
+import Card from "../shared/card/Card.astro";
+import Link from "../shared/link/Link.astro";
+
+const pathname = Astro.url.pathname;
+
+const title = "Navigation"
+
+const nav = [
+  {
+    title: "Home",
+    href: "/"
+  },
+  {
+    title: "History",
+    href: "/history"
+  }
+]
+---
+<Card 
+  title={
+    <div class="flex items-center gap-xs">
+      <Folder width={17} height={17} />
+      <span>{title}</span>
+    </div>
+  }>
+  <nav class="pl-sm pt-sm flex-col gap-xs">
+    {
+      nav.map(({title, href}) => {
+        const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
+
+        return (
+          <Link 
+            href={href}
+            active={active}
+          >
+            <div class="flex items-center gap-sm">
+              <Plus width={13} height={13} />
+              <div>{title}</div>
+            </div>
+          </Link>
+        )
+      })
+    }
+  </nav>
+</Card>

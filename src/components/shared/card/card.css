@@ -1,0 +1,9 @@
+.card {
+  border: .2rem outset var(--border);
+  padding: var(--spacing-2);
+}
+
+.card__title {
+  color: var(--foreground-secondary);
+  font-size: var(--font-lg);
+}

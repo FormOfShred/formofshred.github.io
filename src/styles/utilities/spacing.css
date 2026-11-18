@@ -1,0 +1,51 @@
+/* Gap */
+.gap-none {
+  gap: var(--spacing-0);
+}
+
+.gap-xs {
+  gap: var(--spacing-1);
+}
+
+.gap-sm {
+  gap: var(--spacing-2);
+}
+
+/* Padding */
+.p-none {
+  padding: var(--spacing-0);
+}
+
+.p-xs {
+  padding: var(--spacing-1);
+}
+
+.p-sm {
+  padding: var(--spacing-2);
+}
+
+/* Padding Left*/
+.pl-none {
+  padding-left: var(--spacing-0);
+}
+
+.pl-xs {
+  padding-left: var(--spacing-1);
+}
+
+.pl-sm {
+  padding-left: var(--spacing-2);
+}
+
+/* Padding Top */
+.pt-none {
+  padding-top: var(--spacing-0);
+}
+
+.pt-xs {
+  padding-top: var(--spacing-1);
+}
+
+.pt-sm {
+  padding-top: var(--spacing-2);
+}

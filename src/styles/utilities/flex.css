@@ -1,0 +1,15 @@
+/* Basic */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Alignment */
+
+.items-center {
+  align-items: center;
+}

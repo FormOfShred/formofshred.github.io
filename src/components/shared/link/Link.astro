@@ -1,0 +1,11 @@
+---
+import "./link.css";
+
+const { href, active } = Astro.props;
+---
+<a
+  class:list={["link", {"link--active": active}]}
+  href={href}
+>
+  <slot />
+</a>
