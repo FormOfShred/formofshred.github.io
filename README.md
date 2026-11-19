@@ -4,3 +4,4 @@
 
 - View transitions
 - Implement history tab
+- Favicon
